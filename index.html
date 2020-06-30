@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Wireve</title>
+    <script src="https://kit.fontawesome.com/31544a3f14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style_wireve.css">
+  </head>
+  <body id="page-home">
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+      $('body').scrollspy({ target: '#navbarMain'});
+      $('#navbarMain a').on('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault();
+          const hash = this.hash;
+          const heightNavbar = $("#navbarMain").height();
+          const marginSection = parseInt($(`${$(this).attr('href')}`).css('margin-top'));
+          let offset = $(hash).offset().top - heightNavbar - marginSection;
+          $('html, body').animate({
+            scrollTop: offset
+          }, 900, function () {
+            if ( history.pushState ) {
+              history.pushState(null, null, hash);
+            } else {
+              location.hash = hash;
+            }
+          
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

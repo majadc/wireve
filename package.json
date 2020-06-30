@@ -1,0 +1,16 @@
+{
+  "name": "wireve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch sass/main.scss:css/style_wireve.css",
+    "compile:sass": "sass sass/main.scss css/style.compile.css",
+    "prefix:css": "postcss css/style.compile.css --use autoprefixer -o css/style.prefix.css",
+    "compress:css": "sass --style=compressed css/style.prefix.css css/style_wireve.css",
+    "build": "npm-run-all compile:sass prefix:css compress:css "
+
+  },
+  "author": "majadc",
+  "license": "ISC"
+}
