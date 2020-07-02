@@ -5,37 +5,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Wireve</title>
     <script src="https://kit.fontawesome.com/31544a3f14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/vendor/owl.theme.green.min.css">
     <link rel="stylesheet" href="css/style_wireve.css">
+    s
   </head>
-  <body id="page-home">
+  <body id="pageHome">
+    <nav id="navbarMain" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark mdc-navbar">
+      <div class="container">
+        <a href="home" class="navbar-brand">Brand</a>
+        <a href="#" class="btn btn-outline-light order-md-1">Let's Play!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuMain" aria-controls="menuMain">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuMain">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Team</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Partners</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Gallery</a></li>
+        </ul>
+      </div>
+      
+      </div>
+    </nav>
+    <header id="home" class="card mdc-header">
+      <div class="card-body d-flex flex-column align-items-center justify-content-center text-white">
+        <h1 class="card-title display-1 mb-3">Wireve</h1>
+        <h2 class="card-subtitle display-3 mb-5">Company that plays in your soul!</h2>
+        <p class="card-text lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, consectetur.</p>
+      </div>
+    </header>
+    <section id="about" class="mdc-about">
+      <div class="container">
+        <h2 class="display-2">About</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorum rem eius a iure sunt. Esse, minima! Similique voluptas debitis omnis voluptatem, provident, natus, facere magnam expedita iusto nam delectus.</p>
 
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-sm-8">
+              <div class="card-body">
+                <h3 class="card-title">Lorem ipsum dolor sit amet.</h3>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia vitae illo incidunt magnam. Pariatur, amet!</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                  <li class="list-group-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                  <li class="list-group-item">Lorem, ipsum dolor.</li>
+                  <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                  <li class="list-group-item">Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 d-flex align-items-start justify-content-end ">
+              <img class="img-fluid rounded-top" src="images/header-bg.jpg" alt="">
+            </div>
+          </div>
+        </div><!--card-->
 
+        <div id="mdc-stats" class="row mdc-stats">
+          <div class="col-md-3 com-sm-6">Satisfied Customers <span class="counter">1000</span></div>
+          <div class="col-md-3 com-sm-6">Released Projects <span class="counter">4488</span></div>
+          <div class="col-md-3 com-sm-6">Hours of Support <span class="counter">53432</span></div>
+          <div class="col-md-3 com-sm-6">Hard workers <span class="counter">55666</span></div>
+        </div>
+
+      </div><!--container-->
+    </section>
+
+    <section id="cta" class="mdc-cta">
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Call to Action</h2>
+            <p class="cart-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ea?</p>
+            <button class="btn btn-outline-light">Start</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mdc-services" id="services">
+      <div class="container">
+        <h2 class="display-1">Services</h2>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 mt-4 mt-lg-0">
+            <div class="card bg-dark text-light">
+              <img src="images/header-bg.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h3 class="card-title">Service title</h3>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nam ipsum numquam nesciunt ipsam ipsa.</p>
+                <a href="#" class="btn btn-outline-light">more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-4 mt-lg-0">
+            <div class="card bg-dark text-light">
+              <img src="images/header-bg.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h3 class="card-title">Service title</h3>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nam ipsum numquam nesciunt ipsam ipsa.</p>
+                <a href="#" class="btn btn-outline-light">more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-4 mt-lg-0">
+            <div class="card bg-dark text-light">
+              <img src="images/header-bg.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h3 class="card-title">Service title</h3>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nam ipsum numquam nesciunt ipsam ipsa.</p>
+                <a href="#" class="btn btn-outline-light">more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-4 mt-lg-0">
+            <div class="card bg-dark text-light">
+              <img src="images/header-bg.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h3 class="card-title">Service title</h3>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nam ipsum numquam nesciunt ipsam ipsa.</p>
+                <a href="#" class="btn btn-outline-light">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="mdc-clients">
+      <div class="container">
+        <h2 class="display-1">Clients</h2>
+        <div class="owl-carousel">
+          <img src="images/garfield1.png" alt="">
+          <img src="images/garfield1.png" alt="">
+          <img src="images/garfield1.png" alt="">
+          <img src="images/garfield1.png" alt="">
+          <img src="images/garfield1.png" alt="">
+          <img src="images/garfield1.png" alt="">
+          <img src="images/garfield1.png" alt="">
+          <img src="images/garfield1.png" alt="">
+          <img src="images/garfield1.png" alt="">
+          <img src="images/garfield1.png" alt="">
+          <img src="images/garfield1.png" alt="">
+          <img src="images/garfield1.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="mdc-team" id="team">
+      <div class="container">
+        <h2 class="display-1">Team</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-sm-6">
+            <div class="card ">
+              <img src="images/header-bg.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">Tomy Tom</h3>
+                <p class="card-text">CiEiO</p>
+                <div class="mdc-team__social">
+                  <ul class="nav">
+                  <li class="nav-item"><a href="#!" class="nav-link">f</a></li>
+                  <li class="nav-item"><a href="#!" class="nav-link">i</a></li>
+                  <li class="nav-item"><a href="#!" class="nav-link">t</a></li>
+                  <li class="nav-item"><a href="#!" class="nav-link">in</a></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">2</div>
+          <div class="col-lg-3 col-sm-6">3</div>
+          <div class="col-lg-3 col-sm-6">4</div>
+          <div class="col-lg-3 col-sm-6">5</div>
+          <div class="col-lg-3 col-sm-6">6</div>
+          
+        </div>
+      </div>
+
+    </section>
+
+    <section class="mdc-gallery" id="gallery">
+      <div class="container">
+        <h2 class="display-1">Gallery</h2>
+        <ul id="tabsGallery" class="nav nav-tabs" role="tablist">
+          <li class="nav-item" role="presentation"><a id=firstTabGallery href="#nameTab" class="nav-link" data-toggle="tab" role="tab" aria-controls="nameTab" aria-selected="true">All</a></li>
+          <li class="nav-item" role="presentation"><a id="secondTabGallery" href="#name2Tab" class="nav-link" data-toggle="tab" role="tab" aria-controls="name2Tab" aria-selected="false">We</a></li>
+          <li class="nav-item" role="presentation"><a id="thirdTabGallery" href="#name3Tab" class="nav-link" data-toggle="tab" role="tab" aria-controls="name3Tab" aria-selected="false">You</a></li>
+        </ul>
+        <div class="tab-content" id="tabContentGallery">
+          <div class="tab-pane fade show active" id="nameTab" role="tabpanel" aria-labelledby="firstTabGallery">
+            1
+          </div>
+          <div class="tab-pane fade" id="name2Tab" role="tabpanel" aria-labelledby="secondTabGallery">
+            2
+          </div>
+          <div class="tab-pane fade" id="name3Tab" role="tabpanel" aria-labelledby="thirdTabGallery">
+            3
+          </div>
+        </div>
+      </div>
+
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/vendor/jquery.waypoints.min.js"></script>
+    <script src="js/vendor/jquery.counterup.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+    <script src="js/main_wireve.js"></script>
     <script>
-      $('body').scrollspy({ target: '#navbarMain'});
-      $('#navbarMain a').on('click', function (e) {
-        if (this.hash !== '') {
-          e.preventDefault();
-          const hash = this.hash;
-          const heightNavbar = $("#navbarMain").height();
-          const marginSection = parseInt($(`${$(this).attr('href')}`).css('margin-top'));
-          let offset = $(hash).offset().top - heightNavbar - marginSection;
-          $('html, body').animate({
-            scrollTop: offset
-          }, 900, function () {
-            if ( history.pushState ) {
-              history.pushState(null, null, hash);
-            } else {
-              location.hash = hash;
-            }
-          
-          });
-        }
-      });
+      
     </script>
   </body>
 </html>

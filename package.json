@@ -9,8 +9,8 @@
     "prefix:css": "postcss css/style.compile.css --use autoprefixer -o css/style.prefix.css",
     "compress:css": "sass --style=compressed css/style.prefix.css css/style_wireve.css",
     "build": "npm-run-all compile:sass prefix:css compress:css "
-
   },
   "author": "majadc",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
