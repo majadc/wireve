@@ -1,0 +1,34 @@
+$blue: #c1ccd4;
+$orange: #fdb360;
+$yellow: #fbe5ad;
+$brown: #8f7d75;
+$black: #000002;
+$white: #fefde5;
+
+
+$primary:       $brown;
+$secondary:     $yellow;
+$success:       $blue;
+
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+$light:         $yellow;
+$dark:          $black;
+
+$font-weight-bolder:          600;
+
+//body
+
+$body-bg:                   $black;
+$body-color:                   $yellow;
+
+// navbar
+$navbar-dark-color:                 rgba($yellow, .7) !default;
+$navbar-dark-hover-color:           rgba($orange, .75) !default;
+$navbar-dark-active-color:          $orange !default;
+$navbar-dark-disabled-color:        rgba($yellow, .25) !default;
+
+
+$font-family-sans-serif: 'Advent Pro',  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+

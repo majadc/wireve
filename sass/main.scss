@@ -1,3 +1,4 @@
+@use 'sass:color';
 @import "bootstrap_overrides";
 
 @import "bootstrap/functions";
@@ -38,4 +39,7 @@
 @import "bootstrap/utilities";
 @import "bootstrap/print";
 
+@import "majadc_wireve/variables";
+@import "majadc_wireve/typography";
+@import "majadc_wireve/l-base";
 @import "majadc_wireve/components";
