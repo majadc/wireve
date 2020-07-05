@@ -87,7 +87,7 @@
   }
 }
 .mdc-awards {
-  .mdc-awards-content {
+  &__content {
     margin-top: -5rem;
     padding-top: 3rem;
     position: relative;
@@ -98,7 +98,7 @@
     position: relative;
     padding: 5rem 0;
   }
-  .mdc-awards__img {
+  &__img {
     z-index: 4;
     position: relative;
     img {
@@ -107,14 +107,13 @@
       position: relative;
       
     }
-    .mdc-awards__img-ico {
+    &__img-ico {
       position: absolute;
       top:1rem;
       right: -2rem;
       z-index: 5;
       width: 2rem;
       height: 2rem;
-     
       background-color: $blue;
       opacity:1 ;
       clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
@@ -128,58 +127,63 @@
     bottom: 0;
     z-index: 6;
     padding: 0;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background: linear-gradient(to top right, color.change($yellow, $alpha: 0.95) 20%, color.change($brown, $alpha: 0.95) 70%);
-    border-top-right-radius: 100%;
+    border-top-right-radius: 50%;
     box-shadow:inset 0 0  3px $black;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 
   }
-  .mdc-awards__icon {
+  &__icon {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     color: $black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     transform: rotatez(-40deg);
     text-align: center;
-    line-height: 40px;
+    line-height: 30px;
+    transition: all 0.1s cubic-bezier(0.77, 0, 0.175, 1);
+    opacity: 1;
   }
   
-  .mdc-awards__entry {
+  &__entry {
     position: absolute;
     top:0;
     left:0;
     z-index: 10;
-    width: 0%;
-    height: 0%;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translatez(100%);
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
     
   }
   .card-body:hover {
     width: 100%;
     height: 100%;
     border-radius: 0;
-  
   }
   .card-body:hover .mdc-awards__icon {
-    
     display: none;
     opacity: 0;
     visibility: hidden;
-    transition-delay: 0.2s;
+    transition-delay: 0s;
     
   }
   .card-body:hover .mdc-awards__entry {
     width: 100%;
     height: 100%;
-    
     opacity: 1;
+    transform: translatez(0);
     transition-delay: 0.2s;
   }
   .card-title {
@@ -205,14 +209,6 @@
   }
 
 }
-
-// .mdc-awards ul li:nth-child(2) .mdc-awards__img::before, .mdc-awards ul li:nth-child(2) .mdc-awards__img img {
-//   animation-delay: 1s;
-// }
-// .mdc-awards ul li:nth-child(3) .mdc-awards__img::before, .mdc-awards ul li:nth-child(3) .mdc-awards__img img {
-//   animation-delay: 2s;
-// }
-
 
 @keyframes award-anime {
   0% {
