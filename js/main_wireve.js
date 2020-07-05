@@ -46,7 +46,12 @@ $(document).ready(function() {
         }
       });
 
-
-
+  let delay = 1;
+  $("#mdc-awards .mdc-awards__item").each(function(){
+    $(this).find('.mdc-awards__img-ico').css('animation-delay', `${delay}s`);
+    $(this).find('.mdc-awards__img img').css('animation-delay', `${delay}s`);
+    
+    delay++;
+  });
   
 });

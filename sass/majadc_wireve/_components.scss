@@ -30,18 +30,220 @@
   }
 }
 
-.mdc-cta {
-  background-image: url("/images/header-bg.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  .card {
-    background-color: transparent;
-  }
-}
+
 
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
   background:red;
   width: 1em;
   height: 1em;
+}
+
+.mdc-stats {
+  li {
+    color: $orange;
+    font-size: 1.4rem;
+  }
+  li .badge {
+    background-image: url("/images/tambourine_01.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 7rem;
+    height: 7rem;
+    display: block;
+    line-height: 6.2rem;
+    text-align: center;
+    font-size: $font-size-base * 1.25;
+    font-weight: $font-weight-light;
+    margin-bottom: 1rem;
+    color: $yellow;
+    
+  }
+}
+
+.mdc-cta {
+  background:  url("/images/face_2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 20;
+  padding-bottom:5rem;
+  .card {
+    background-color: transparent;
+    
+    .card-body {
+      background: color.change($black, $alpha: 0.6);
+      width: 100%;
+    }
+    .card-title {
+      color: $blue;
+    }
+    .card-text {
+      color: $blue;
+      
+    }
+  }
+}
+.mdc-awards {
+  .mdc-awards-content {
+    margin-top: -5rem;
+    padding-top: 3rem;
+    position: relative;
+    z-index: 20;
+    background-color: $black;
+  }
+  .card {
+    position: relative;
+    padding: 5rem 0;
+  }
+  .mdc-awards__img {
+    z-index: 4;
+    position: relative;
+    img {
+      animation: award-anime 7s cubic-bezier(.6,-0.28,.74,.05) infinite;
+      animation-direction: alternate;
+      position: relative;
+      
+    }
+    .mdc-awards__img-ico {
+      position: absolute;
+      top:1rem;
+      right: -2rem;
+      z-index: 5;
+      width: 2rem;
+      height: 2rem;
+     
+      background-color: $blue;
+      opacity:1 ;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      animation: star-anime 7s cubic-bezier(.6,-0.28,.74,.05) infinite;
+      animation-direction: alternate;
+    }
+  }
+  .card-body {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 6;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to top right, color.change($yellow, $alpha: 0.95) 20%, color.change($brown, $alpha: 0.95) 70%);
+    border-top-right-radius: 100%;
+    box-shadow:inset 0 0  3px $black;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+
+  }
+  .mdc-awards__icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: $black;
+    transform: rotatez(-40deg);
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  .mdc-awards__entry {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .card-body:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  
+  }
+  .card-body:hover .mdc-awards__icon {
+    
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0.2s;
+    
+  }
+  .card-body:hover .mdc-awards__entry {
+    width: 100%;
+    height: 100%;
+    
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+  .card-title {
+    color: $black;
+  }
+  .card-subtitle {
+    color: $black;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    a {
+      display: block;
+      color: $black;
+      @include hover-focus() {
+        color: $yellow;
+        text-decoration: none;
+        background-color: color.change($black, $alpha: 0.7);
+      }
+    }
+  }
+  .card-text {
+    color: $black;
+  }
+
+}
+
+// .mdc-awards ul li:nth-child(2) .mdc-awards__img::before, .mdc-awards ul li:nth-child(2) .mdc-awards__img img {
+//   animation-delay: 1s;
+// }
+// .mdc-awards ul li:nth-child(3) .mdc-awards__img::before, .mdc-awards ul li:nth-child(3) .mdc-awards__img img {
+//   animation-delay: 2s;
+// }
+
+
+@keyframes award-anime {
+  0% {
+    filter: saturate(100%) brightness(1);
+  }
+  100% {
+    filter: saturate(30%) brightness(0.4);
+  }
+}
+
+@keyframes star-anime {
+  0% {
+    opacity: 1;
+  }
+  50% {
+   opacity: 0;
+  }
+   100% {
+    opacity: 0;
+   }
+}
+@keyframes awards-icon-anime  {
+  0% {
+    transform: rotatez(0);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotatez(180deg);
+    opacity: 0;
+  }
 }
