@@ -275,3 +275,19 @@
 
 
 
+.mdc-services {
+  .card {
+   height: 100%;
+  }
+  .card-body {
+    display: grid;
+    grid-template-rows: fit-content(40%) auto 3rem;
+   .card-text {
+     
+   }
+   .btn {
+   
+     
+   }
+  }
+}

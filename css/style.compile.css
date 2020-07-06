@@ -10002,7 +10002,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #c1ccd4;
 }
 
-.mdc-awards .mdc-awards-content {
+.mdc-awards__content {
   margin-top: -5rem;
   padding-top: 3rem;
   position: relative;
@@ -10013,16 +10013,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   position: relative;
   padding: 5rem 0;
 }
-.mdc-awards .mdc-awards__img {
+.mdc-awards__img {
   z-index: 4;
   position: relative;
 }
-.mdc-awards .mdc-awards__img img {
+.mdc-awards__img img {
   animation: award-anime 7s cubic-bezier(0.6, -0.28, 0.74, 0.05) infinite;
   animation-direction: alternate;
   position: relative;
 }
-.mdc-awards .mdc-awards__img .mdc-awards__img-ico {
+.mdc-awards__img__img-ico {
   position: absolute;
   top: 1rem;
   right: -2rem;
@@ -10041,35 +10041,42 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   bottom: 0;
   z-index: 6;
   padding: 0;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background: linear-gradient(to top right, rgba(255, 232, 207, 0.95) 20%, rgba(143, 125, 117, 0.95) 70%);
-  border-top-right-radius: 100%;
+  border-top-right-radius: 50%;
   box-shadow: inset 0 0 3px #000002;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.mdc-awards .mdc-awards__icon {
+.mdc-awards__icon {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   color: #000002;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   transform: rotatez(-40deg);
   text-align: center;
-  line-height: 40px;
+  line-height: 30px;
+  transition: all 0.1s cubic-bezier(0.77, 0, 0.175, 1);
+  opacity: 1;
 }
-.mdc-awards .mdc-awards__entry {
+.mdc-awards__entry {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
-  width: 0%;
-  height: 0%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: translatez(100%);
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 .mdc-awards .card-body:hover {
   width: 100%;
@@ -10080,12 +10087,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   display: none;
   opacity: 0;
   visibility: hidden;
-  transition-delay: 0.2s;
+  transition-delay: 0s;
 }
 .mdc-awards .card-body:hover .mdc-awards__entry {
   width: 100%;
   height: 100%;
   opacity: 1;
+  transform: translatez(0);
   transition-delay: 0.2s;
 }
 .mdc-awards .card-title {
@@ -10164,6 +10172,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .mdc-team__img:hover .mdc-team__social {
   opacity: 1;
+}
+
+.mdc-services .card {
+  height: 100%;
+}
+.mdc-services .card-body {
+  display: grid;
+  grid-template-rows: fit-content(40%) auto 3rem;
 }
 
 /*# sourceMappingURL=style.compile.css.map */
