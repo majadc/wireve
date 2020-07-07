@@ -1,0 +1,24 @@
+.owl-carousel {
+  .owl-stage-outer {
+    background: linear-gradient(to top right, color.change($yellow, $alpha: 0.8) 20%, color.change($brown, $alpha: 0.8) 80%);
+    //background: $yellow;
+    .owl-item {
+      border-right: 1px solid $brown;
+      
+     
+    }
+  }
+  .owl-dots {
+    text-align: center;
+  }
+   button.owl-dot {
+    background: $brown;
+    width: 1.25rem;
+    height: 1.25rem;  
+    margin: 0 0.25rem;
+    border-radius: 50%;
+  }
+  .owl-dot.active {
+    background: $yellow;
+  }
+}
