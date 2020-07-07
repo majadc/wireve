@@ -54,4 +54,10 @@ $(document).ready(function() {
     delay++;
   });
   
-});
+  // $("#gallery").isotope({
+  //   // options
+  //   itemSelector: '.grid-item',
+  //   layoutMode: 'fitRows'
+  // });
+
+});//ready
