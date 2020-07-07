@@ -29,7 +29,7 @@ $(document).ready(function() {
         delay: 16
       });
 
-      $("#clients .owl-carousel").owlCarousel({
+      $(".owl-carousel").owlCarousel({
         autoplay: true,
         dots: true,
         loop: true,
@@ -47,17 +47,30 @@ $(document).ready(function() {
       });
 
   let delay = 1;
-  $("#mdc-awards .mdc-awards__item").each(function(){
+  $("#mdc-awards").find(".mdc-awards__item").each(function(){
     $(this).find('.mdc-awards__img-ico').css('animation-delay', `${delay}s`);
     $(this).find('.mdc-awards__img img').css('animation-delay', `${delay}s`);
-    
     delay++;
   });
   
-  // $("#gallery").isotope({
-  //   // options
-  //   itemSelector: '.grid-item',
-  //   layoutMode: 'fitRows'
-  // });
+  $("#officeGallery .mdc-gallery__item").click(function(){
+    let imgSrc = $(this).find('img').attr('src').replace("_mini.jpg", '.jpg');
+    $("#modalGallery").find(".modal-content").append(`<img src='${imgSrc}' class='img-fluid' alt='Our Office' />`);
+  });
+  $("#machinesGallery .mdc-gallery__item").click(function(){
+    let imgSrc = $(this).find('img').attr('src').replace("_mini.jpg", '.jpg');
+    $("#modalGallery").find(".modal-content").append(`<img src='${imgSrc}' class='img-fluid' alt='Our Machines' />`);
+  });
+
+  $('#modalGallery').on('hidden.bs.modal', function (e) {
+    $(this).find('img').remove();
+  })
+  $('#modalGallery').modal('handleUpdate') ;
+
+  $("#eventsGallery .mdc-gallery__item").click(function(){
+    let imgSrc = $(this).find('img').attr('src').replace("_mini.jpg", '.jpg');
+    let dataTarget = $(this).attr('data-target');
+    $(dataTarget).find(".modal-body").append(`<img src='${imgSrc}' class='img-fluid' alt='Our Office' />`);
+  });
 
 });//ready
