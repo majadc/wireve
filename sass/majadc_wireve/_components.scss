@@ -13,8 +13,8 @@
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment:fixed;
-  background-position: center center;
-  background-blend-mode: difference;
+  background-position: center;
+  box-shadow: none;
   &::before {
     content: "";
     position: absolute;
@@ -76,9 +76,10 @@
   background-size: cover;
   position: relative;
   z-index: 20;
-  padding-bottom:5rem;
+  //padding-bottom:4rem;
   .card {
     background-color: transparent;
+    box-shadow: none;
     
     .card-body {
       background: color.change($black, $alpha: 0.6);
@@ -97,8 +98,8 @@
 // awards
 .mdc-awards {
   &__content {
-    margin-top: -5rem;
-    padding-top: 3rem;
+    margin-top: -3rem;
+    //padding-top: 3rem;
     position: relative;
     z-index: 20;
     background-color: $black;
