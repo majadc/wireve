@@ -1,0 +1,20 @@
+.mdc-about .fas, .mdc-team .fab {
+  color: $yellow;
+  
+  @supports ( background-clip: text ) or ( -webkit-background-clip: text ) {
+    background-image: $background-gradient-light;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+.fa-check-square {
+  font-size: $font-size-base * 2;
+  margin-right: 0.5em;
+}
+
+.mdc-team .fab:hover {
+  color: $yellow;
+  background-clip: text;
+  -webkit-background-clip: text;
+}

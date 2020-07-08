@@ -9920,36 +9920,35 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 2.4rem;
 }
 
-#pageHome {
-  height: 2000px;
+.card {
+  box-shadow: 0 0 2px 0 #8f7d75;
 }
 
-.mdc-header {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100vh;
-  background-color: transparent;
-  background-image: url("/images/scratches.png"), url("/images/header-bg.jpg");
-  background-repeat: repeat, no-repeat;
-  background-size: 200px, cover;
-  background-attachment: fixed;
-  background-position: center center;
-  background-blend-mode: difference;
+.nav-tabs {
+  border-bottom-color: #c1ccd4;
 }
-.mdc-header::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+
+.mdc-about .fas, .mdc-team .fab {
+  color: #FFE8CF;
 }
-.mdc-header .card-body {
-  position: relative;
-  z-index: 3;
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .mdc-about .fas, .mdc-team .fab {
+    background-image: linear-gradient(to top right, rgba(255, 232, 207, 0.95) 20%, rgba(143, 125, 117, 0.95) 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.fa-check-square {
+  font-size: 2.4rem;
+  margin-right: 0.5em;
+}
+
+.mdc-team .fab:hover {
+  color: #FFE8CF;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .owl-carousel .owl-stage-outer {
@@ -9972,24 +9971,57 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background: #FFE8CF;
 }
 
+.mdc-navbar {
+  box-shadow: 0 0 2px 0 #8f7d75;
+}
+
+.mdc-header {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  background-image: url("/images/bg_header_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-blend-mode: difference;
+}
+.mdc-header::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mdc-header .card-body {
+  position: relative;
+  z-index: 3;
+}
+
+.mdc-about__list-text {
+  margin-top: 0.25em;
+}
+
 .mdc-stats li {
   color: #fdb360;
   font-size: 1.4rem;
 }
 .mdc-stats li .badge {
-  background-image: url("/images/tambourine_01.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 7rem;
-  height: 7rem;
+  background: linear-gradient(to top right, rgba(255, 232, 207, 0.95) 20%, rgba(143, 125, 117, 0.95) 70%);
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   display: block;
-  line-height: 6.2rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   font-weight: 300;
   margin-bottom: 1rem;
-  color: #FFE8CF;
+  color: #000002;
 }
 
 .mdc-cta {
@@ -10058,7 +10090,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   width: 35px;
   height: 35px;
   background: linear-gradient(to top right, rgba(255, 232, 207, 0.95) 20%, rgba(143, 125, 117, 0.95) 70%);
-  border-top-right-radius: 50%;
+  border-top-right-radius: 0.25rem;
   box-shadow: inset 0 0 3px #000002;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -10132,41 +10164,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #000002;
 }
 
-@keyframes award-anime {
-  0% {
-    filter: saturate(100%) brightness(1);
-  }
-  100% {
-    filter: saturate(30%) brightness(0.4);
-  }
-}
-@keyframes star-anime {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes awards-icon-anime {
-  0% {
-    transform: rotatez(0);
-    opacity: 1;
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotatez(180deg);
-    opacity: 0;
-  }
-}
-.mdc-team .card {
-  box-shadow: inset 0 0 2px 0 #8f7d75;
-}
 .mdc-team__img {
   position: relative;
 }
@@ -10179,10 +10176,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 2, 0.7);
+  background-color: rgba(0, 0, 2, 0.9);
   font-size: 2rem;
   opacity: 0;
   transition: all 0.3s linear;
+}
+.mdc-team__social .nav-link {
+  line-height: 1;
+  font-size: 2.5rem;
 }
 .mdc-team__img:hover .mdc-team__social {
   opacity: 1;
@@ -10233,8 +10234,37 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   height: calc(100vh - 3.5rem);
 }
 
-.nav-tabs {
-  border-bottom-color: #c1ccd4;
+@keyframes award-anime {
+  0% {
+    filter: saturate(100%) brightness(1);
+  }
+  100% {
+    filter: saturate(30%) brightness(0.4);
+  }
+}
+@keyframes star-anime {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes awards-icon-anime {
+  0% {
+    transform: rotatez(0);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotatez(180deg);
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.compile.css.map */

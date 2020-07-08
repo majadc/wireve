@@ -2,6 +2,7 @@
   box-shadow: $box-shadow-brown;
 }
 
+// header
 .mdc-header {
   position: relative;
   z-index: 1;
@@ -31,10 +32,14 @@
   }
 }
 
+// about
+.mdc-about {
+  &__list-text {
+    margin-top: 0.25em;
+  }
+}
 
-
-
-
+// stats
 .mdc-stats {
   li {
     color: $orange;
@@ -62,6 +67,7 @@
   }
 }
 
+// cta
 .mdc-cta {
   background:  url("/images/face_2.jpg");
   background-position: center center;
@@ -87,6 +93,8 @@
     }
   }
 }
+
+// awards
 .mdc-awards {
   &__content {
     margin-top: -5rem;
@@ -131,8 +139,8 @@
     padding: 0;
     width: 35px;
     height: 35px;
-    background: linear-gradient(to top right, color.change($yellow, $alpha: 0.95) 20%, color.change($brown, $alpha: 0.95) 70%);
-    border-top-right-radius: 50%;
+    background: $background-gradient-light;
+    border-top-right-radius: 0.25rem;
     box-shadow:inset 0 0  3px $black;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 
@@ -212,37 +220,39 @@
 
 }
 
-
-
+// team
 .mdc-team {
-  
+
   &__img {
     position: relative;
     img {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
     }
-    
   }
+
   &__social {
     position: absolute;
     bottom: 0;
     left:0;
     width: 100%;
-    background-color: color.change($black, $alpha: 0.7);
+    background-color: color.change($black, $alpha: 0.9);
     font-size: 2rem;
     opacity: 0;
     transition: all 0.3s linear;
+    .nav-link {
+      line-height: 1;
+      font-size: 2.5rem;
+    }
   }
+
   &__img:hover .mdc-team__social {
     opacity: 1;
   }
+ 
 }
 
-
-
-
-
+// services
 .mdc-services {
   .card {
    height: 100%;
@@ -260,7 +270,7 @@
   }
 }
 
-
+// gallery
 .mdc-gallery {
   &__grid {
   display: grid;
