@@ -9928,11 +9928,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   border-bottom-color: #c1ccd4;
 }
 
-.mdc-about .fas, .mdc-team .fab {
+.mdc-about .fas, .mdc-team .fab, .mdc-questions .fas {
   color: #FFE8CF;
 }
 @supports (background-clip: text) or (-webkit-background-clip: text) {
-  .mdc-about .fas, .mdc-team .fab {
+  .mdc-about .fas, .mdc-team .fab, .mdc-questions .fas {
     background-image: linear-gradient(to top right, rgba(255, 232, 207, 0.95) 20%, rgba(143, 125, 117, 0.95) 70%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -9947,6 +9947,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .mdc-team .fab:hover {
   color: #FFE8CF;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.mdc-questions__ico .fas {
+  font-size: 2.4rem;
+}
+.mdc-questions__header:hover .fas, .mdc-questions__header.active .fas {
+  color: #000002;
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -9985,8 +9994,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center;
-  background-blend-mode: difference;
+  background-position: center;
+  box-shadow: none;
 }
 .mdc-header::before {
   content: "";
@@ -10032,10 +10041,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background-size: cover;
   position: relative;
   z-index: 20;
-  padding-bottom: 5rem;
 }
 .mdc-cta .card {
   background-color: transparent;
+  box-shadow: none;
 }
 .mdc-cta .card .card-body {
   background: rgba(0, 0, 2, 0.6);
@@ -10049,8 +10058,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .mdc-awards__content {
-  margin-top: -5rem;
-  padding-top: 3rem;
+  margin-top: -3rem;
   position: relative;
   z-index: 20;
   background-color: #000002;
@@ -10232,6 +10240,32 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 #modalGallery .modal-dialog-centered {
   height: calc(100vh - 3.5rem);
+}
+
+.mdc-questions__header {
+  cursor: pointer;
+}
+.mdc-questions__header h3 {
+  font-family: "Advent Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  color: #FFE8CF;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.mdc-questions__header:hover, .mdc-questions__header.active {
+  background: linear-gradient(to top right, rgba(255, 232, 207, 0.95) 20%, rgba(143, 125, 117, 0.95) 70%);
+}
+.mdc-questions__header:hover h3, .mdc-questions__header.active h3 {
+  color: #000002;
+}
+.mdc-questions__body {
+  color: #000002;
+  background-color: #FFE8CF;
+  box-shadow: 0 0 2px 0 #8f7d75;
+}
+
+.mdc-footer {
+  height: 500px;
 }
 
 @keyframes award-anime {

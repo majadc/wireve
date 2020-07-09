@@ -7,3 +7,7 @@ $box-shadow-brown: 0 0 2px 0 $brown;
 $box-shadow-brown-inset: inset 0 0 2px 0 $brown;
 
 $background-gradient-light: linear-gradient(to top right, color.change($yellow, $alpha: 0.95) 20%, color.change($brown, $alpha: 0.95) 70%);
+
+$background-gradient-dark: linear-gradient(to top right, color.change($brown, $alpha: 0.95) 20%, color.change($black, $alpha: 0.95) 55%);
+
+$background-gradient-dl: linear-gradient(to top right, color.change($brown, $alpha: 0.95) 20%, color.change($yellow, $alpha: 0.95) 55%);

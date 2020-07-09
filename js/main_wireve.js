@@ -73,4 +73,19 @@ $(document).ready(function() {
     $(dataTarget).find(".modal-body").append(`<img src='${imgSrc}' class='img-fluid' alt='Our Office' />`);
   });
 
+
+
+  //comments accordion
+
+  $('.accordionQuestions-panel').on('show.bs.collapse', function () {
+   
+   $(this).find('.mdc-questions__header').addClass('active');
+  })
+  $('.accordionQuestions-panel').on('hide.bs.collapse', function () {
+   
+    $(this).find('.mdc-questions__header').removeClass('active');
+   })
+  
+
+
 });//ready

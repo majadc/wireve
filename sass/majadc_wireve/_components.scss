@@ -315,3 +315,36 @@
   }
 }
 
+
+
+.mdc-questions {
+  &__header {
+    cursor: pointer;
+    h3 {
+      font-family: $font-family-sans-serif;
+      font-weight: $font-weight-normal;
+      color: $yellow;
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    &:hover, &.active {
+      background: $background-gradient-light;
+      & h3 {
+        color: $black;
+      }
+    }
+  }
+  &__body {
+    color: $black;
+    background-color: $yellow;
+    box-shadow: $box-shadow-brown;
+  }
+  
+
+}
+
+
+.mdc-footer {
+  height: 500px;
+}

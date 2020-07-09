@@ -1,4 +1,4 @@
-.mdc-about .fas, .mdc-team .fab {
+.mdc-about .fas, .mdc-team .fab, .mdc-questions .fas {
   color: $yellow;
   
   @supports ( background-clip: text ) or ( -webkit-background-clip: text ) {
@@ -13,8 +13,23 @@
   margin-right: 0.5em;
 }
 
-.mdc-team .fab:hover {
+.mdc-team .fab:hover{
   color: $yellow;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.mdc-questions {
+  &__ico .fas {
+    font-size: $font-size-base * 2;
+  }
+  &__header:hover, &__header.active {
+    & .fas {
+      color: $black;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    
+  }
+  
 }
