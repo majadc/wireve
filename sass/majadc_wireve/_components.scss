@@ -29,8 +29,20 @@
   .card-body {
     position: relative;
     z-index: 3;
+    padding-top: 3rem;
   }
 }
+@include media-breakpoint-down(sm) { 
+  .mdc-header {
+    padding-top: 5rem;
+    border: 10px solid red;
+  }
+}
+@media (max-width: 767.98px) { 
+  .mdc-header {
+    height: auto;
+  }
+ }
 
 // about
 .mdc-about {
