@@ -23,6 +23,9 @@ $font-size-base:              1.2rem;
 
 $font-weight-bolder:          600;
 
+
+$text-muted:                  color.change($brown, $alpha: 0.6);
+
 //body
 
 $body-bg:                   $black;
@@ -50,3 +53,8 @@ $nav-tabs-border-color:             $card-border-color;
 $nav-tabs-link-hover-border-color:  $card-border-color $card-border-color $nav-tabs-border-color !default;
 $nav-tabs-link-active-color:        $card-border-color;
 $nav-tabs-link-active-border-color: $card-border-color $card-border-color $black;
+
+// forms 
+
+$input-color:                           $black;
+$input-border-color:                    $brown;

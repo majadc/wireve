@@ -4,3 +4,13 @@
 .nav-tabs {
   border-bottom-color: $card-border-color;
 }
+
+.form-control {
+  background: $background-gradient-light;
+  color: $black;
+ &:focus {
+      color: $black;
+      background: $yellow;
+  
+ }
+}
