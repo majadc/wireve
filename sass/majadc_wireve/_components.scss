@@ -261,13 +261,6 @@
   .card-body {
     display: grid;
     grid-template-rows: fit-content(40%) auto 3rem;
-   .card-text {
-     
-   }
-   .btn {
-   
-     
-   }
   }
 }
 
@@ -285,7 +278,7 @@
     margin: 0;
     img {
       display: block;
-      border: 1px solid $blue;
+      border: 1px solid $black;
       transition: all 0.3s linear;
     }
 
@@ -299,21 +292,51 @@
   }
 }
 
-#modalGallery {
+.mdc-modal-gallery {
   height: 100vh;
   img {
     max-height: 100%;
   }
   .modal-content {
-    height: 100%;
+    //height: 100%;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    position: relative;
+    
   }
   .modal-dialog-centered {
     height:calc(100vh - 3.5rem);
   }
+
+  &__controls {
+    position: absolute;
+    top: 50%;
+    z-index: 10000;
+    background: transparent;
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    // border: none;
+    @include text-gradient-light();
+    display: none;
+    // opacity: 0;
+   //visibility: hidden;
+    // transition: all 0.3s ease-in-out;
+  }
+  &__next {
+    right: 0;
+  }
+  &__prev {
+    left: 0;
+  }
+//   .modal-content:hover &__controls {
+//     visibility: visible;
+//     opacity: 1;
+//   }
 }
+
+
 
 
 

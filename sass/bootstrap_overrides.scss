@@ -46,7 +46,7 @@ $list-group-bg:                     $black;
 $list-group-border-color:           rgba($brown, .125);
 
 //navs tab
-$nav-tabs-border-color:             $blue;
-$nav-tabs-link-hover-border-color:  $blue $blue $nav-tabs-border-color !default;
-$nav-tabs-link-active-color:        $blue;
-$nav-tabs-link-active-border-color: $blue $blue $black;
+$nav-tabs-border-color:             $card-border-color;
+$nav-tabs-link-hover-border-color:  $card-border-color $card-border-color $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        $card-border-color;
+$nav-tabs-link-active-border-color: $card-border-color $card-border-color $black;

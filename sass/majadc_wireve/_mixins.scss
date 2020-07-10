@@ -1,0 +1,9 @@
+@mixin text-gradient-light () {
+  color: $yellow;
+  @supports ( background-clip: text ) or ( -webkit-background-clip: text ) {
+    background-image: $background-gradient-light;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+}

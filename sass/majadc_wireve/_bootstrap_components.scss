@@ -2,5 +2,6 @@
   box-shadow: $box-shadow-brown;
 }
 .nav-tabs {
-  border-bottom-color: $blue;
+  border-bottom-color: $card-border-color;
+  //box-shadow: $box-shadow-brown-inset;
 }

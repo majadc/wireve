@@ -1,12 +1,5 @@
 .mdc-about .fas, .mdc-team .fab, .mdc-questions .fas {
-  color: $yellow;
-  
-  @supports ( background-clip: text ) or ( -webkit-background-clip: text ) {
-    background-image: $background-gradient-light;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
+  @include text-gradient-light();
 }
 .fa-check-square {
   font-size: $font-size-base * 2;
