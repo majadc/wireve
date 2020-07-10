@@ -3872,7 +3872,7 @@ input[type=button].btn-block {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #c1ccd4;
+  border-bottom: 1px solid rgba(143, 125, 117, 0.125);
 }
 .nav-tabs .nav-item {
   margin-bottom: -1px;
@@ -3883,7 +3883,7 @@ input[type=button].btn-block {
   border-top-right-radius: 0.25rem;
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #c1ccd4 #c1ccd4 #c1ccd4;
+  border-color: rgba(143, 125, 117, 0.125) rgba(143, 125, 117, 0.125) rgba(143, 125, 117, 0.125);
 }
 .nav-tabs .nav-link.disabled {
   color: #6c757d;
@@ -3892,9 +3892,9 @@ input[type=button].btn-block {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #c1ccd4;
+  color: rgba(143, 125, 117, 0.125);
   background-color: #000002;
-  border-color: #c1ccd4 #c1ccd4 #000002;
+  border-color: rgba(143, 125, 117, 0.125) rgba(143, 125, 117, 0.125) #000002;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -9925,7 +9925,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .nav-tabs {
-  border-bottom-color: #c1ccd4;
+  border-bottom-color: rgba(143, 125, 117, 0.125);
 }
 
 .mdc-about .fas, .mdc-team .fab, .mdc-questions .fas {
@@ -10204,6 +10204,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   display: grid;
   grid-template-rows: fit-content(40%) auto 3rem;
 }
+
 .mdc-gallery__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -10216,7 +10217,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .mdc-gallery__item img {
   display: block;
-  border: 1px solid #c1ccd4;
+  border: 1px solid #000002;
   transition: all 0.3s linear;
 }
 .mdc-gallery__item:hover img {
@@ -10226,20 +10227,45 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   grid-row: span 2;
 }
 
-#modalGallery {
+.mdc-modal-gallery {
   height: 100vh;
 }
-#modalGallery img {
+.mdc-modal-gallery img {
   max-height: 100%;
 }
-#modalGallery .modal-content {
-  height: 100%;
+.mdc-modal-gallery .modal-content {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  position: relative;
 }
-#modalGallery .modal-dialog-centered {
+.mdc-modal-gallery .modal-dialog-centered {
   height: calc(100vh - 3.5rem);
+}
+.mdc-modal-gallery__controls {
+  position: absolute;
+  top: 50%;
+  z-index: 10000;
+  background: transparent;
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+  color: #FFE8CF;
+  display: none;
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .mdc-modal-gallery__controls {
+    background-image: linear-gradient(to top right, rgba(255, 232, 207, 0.95) 20%, rgba(143, 125, 117, 0.95) 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+.mdc-modal-gallery__next {
+  right: 0;
+}
+.mdc-modal-gallery__prev {
+  left: 0;
 }
 
 .mdc-questions__header {
