@@ -21,9 +21,6 @@ $(document).ready(function() {
         }
       });
 
-
-  
-  
       $('#mdc-stats .counter').counterUp({
         duration: 1000,
         delay: 16
