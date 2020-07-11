@@ -9920,6 +9920,57 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 2.4rem;
 }
 
+@media (max-width: 767.98px) {
+  .display-1 {
+    font-size: 5rem;
+    line-height: 1.1;
+  }
+
+  .display-2 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+  }
+
+  .display-3 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  .h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .h2 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+  }
+
+  .h3 {
+    font-size: 2.1rem;
+    line-height: 1.1;
+  }
+
+  .h4 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+
+  .h5 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
+  .h6 {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+}
 label {
   color: #fdb360;
 }
@@ -9955,11 +10006,11 @@ label {
   color: #000002;
 }
 
-.mdc-about .fas, .mdc-team .fab, .mdc-questions .fas {
+.mdc-about .fas, .mdc-team .fab, .mdc-questions .fas, .mdc-footer__social .fab {
   color: #FFE8CF;
 }
 @supports (background-clip: text) or (-webkit-background-clip: text) {
-  .mdc-about .fas, .mdc-team .fab, .mdc-questions .fas {
+  .mdc-about .fas, .mdc-team .fab, .mdc-questions .fas, .mdc-footer__social .fab {
     background-image: linear-gradient(to top right, rgba(255, 232, 207, 0.95) 20%, rgba(143, 125, 117, 0.95) 70%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -9972,7 +10023,7 @@ label {
   margin-right: 0.5em;
 }
 
-.mdc-team .fab:hover {
+.mdc-team .fab:hover, .mdc-footer__social .fab:hover {
   color: #FFE8CF;
   background-clip: text;
   -webkit-background-clip: text;
@@ -9985,6 +10036,11 @@ label {
   color: #000002;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.mdc-address .h1 .fas {
+  font-size: 1.5rem;
+  margin-right: 0.5em;
 }
 
 .owl-carousel .owl-stage-outer {
@@ -10097,6 +10153,9 @@ label {
   color: #c1ccd4;
 }
 
+.mdc-awards .test {
+  background-color: red;
+}
 .mdc-awards__content {
   margin-top: -3rem;
   position: relative;
@@ -10106,6 +10165,7 @@ label {
 .mdc-awards .card {
   position: relative;
   padding: 5rem 0;
+  z-index: 21;
 }
 .mdc-awards__img {
   z-index: 4;
@@ -10139,8 +10199,8 @@ label {
   bottom: 0;
   z-index: 6;
   padding: 0;
-  width: 35px;
-  height: 35px;
+  width: 31px;
+  height: 31px;
   background: linear-gradient(to top right, rgba(255, 232, 207, 0.95) 20%, rgba(143, 125, 117, 0.95) 70%);
   border-top-right-radius: 0.25rem;
   box-shadow: inset 0 0 3px #000002;
@@ -10148,17 +10208,21 @@ label {
 }
 .mdc-awards__icon {
   display: block;
-  width: 35px;
-  height: 35px;
+  font-size: 2.5rem;
+  width: 44px;
+  height: 44px;
   color: #000002;
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: rotatez(-40deg);
+  z-index: 20000;
   text-align: center;
-  line-height: 30px;
+  line-height: 44px;
   transition: all 0.1s cubic-bezier(0.77, 0, 0.175, 1);
   opacity: 1;
+  background: linear-gradient(to top right, rgba(255, 232, 207, 0.95) 20%, rgba(143, 125, 117, 0.95) 70%);
+  border-top-right-radius: 0.25rem;
+  text-align: center;
 }
 .mdc-awards__entry {
   position: absolute;
@@ -10176,18 +10240,17 @@ label {
   transform: translatez(100%);
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.mdc-awards .card-body:hover {
+.mdc-awards .card-body.active {
   width: 100%;
   height: 100%;
   border-radius: 0;
 }
-.mdc-awards .card-body:hover .mdc-awards__icon {
-  display: none;
-  opacity: 0;
-  visibility: hidden;
+.mdc-awards .mdc-awards__icon.active {
   transition-delay: 0s;
+  background: #000002;
+  color: #FFE8CF;
 }
-.mdc-awards .card-body:hover .mdc-awards__entry {
+.mdc-awards .mdc-awards__entry.active {
   width: 100%;
   height: 100%;
   opacity: 1;
@@ -10269,6 +10332,23 @@ label {
   color: #000002;
   background-color: #FFE8CF;
   box-shadow: 0 0 2px 0 #8f7d75;
+}
+
+.mdc-footer__social {
+  font-size: 3rem;
+  line-height: 1;
+}
+.mdc-footer__social .nav-link {
+  padding-top: 0;
+}
+
+.mdc-newsletter input[type=text] {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.mdc-newsletter button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 @keyframes award-anime {

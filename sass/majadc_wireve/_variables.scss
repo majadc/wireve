@@ -11,3 +11,24 @@ $background-gradient-light: linear-gradient(to top right, color.change($yellow, 
 $background-gradient-dark: linear-gradient(to top right, color.change($brown, $alpha: 0.95) 20%, color.change($black, $alpha: 0.95) 55%);
 
 $background-gradient-dl: linear-gradient(to top right, color.change($brown, $alpha: 0.95) 20%, color.change($yellow, $alpha: 0.95) 55%);
+
+
+
+
+$line-height-base-sm-down:            1.3;
+$headings-line-height-sm-down:        1.1;
+
+$font-size-base-sm-down: 1rem;
+$h1-font-size-sm-down:                $font-size-base * 2.5;
+$h2-font-size-sm-down:                $font-size-base * 2;
+$h3-font-size-sm-down:                $font-size-base * 1.75;
+$h4-font-size-sm-down:                $font-size-base * 1.5;
+$h5-font-size-sm-down:                $font-size-base * 1.25;
+$h6-font-size-sm-down:                $font-size-base;
+
+$display1-size-sm-down:               5rem;
+$display2-size-sm-down:               4.5rem;
+$display3-size-sm-down:               3.5rem;
+$display4-size-sm-down:               2.5rem; 
+
+$display-line-height-sm-down:         $headings-line-height-sm-down;

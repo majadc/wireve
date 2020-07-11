@@ -12,3 +12,49 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-style: italic;
   font-size: $font-size-base * 2;
 }
+
+
+@include media-breakpoint-down(sm) {
+  //$font-size-base:              0.8rem !default; // Assumes the 
+  .display-1 {
+    font-size: $display1-size-sm-down;
+    line-height: $display-line-height-sm-down;
+  }
+  .display-2 {
+    font-size: $display2-size-sm-down;
+    line-height: $display-line-height-sm-down;
+  }
+  .display-3 {
+    font-size: $display3-size-sm-down;
+    line-height: $display-line-height-sm-down;
+  }
+  .display-4 {
+    font-size: $display4-size-sm-down;
+    line-height: $display-line-height-sm-down;
+  }
+  .h1 {
+    font-size: $h1-font-size-sm-down;
+    line-height: $display-line-height-sm-down;
+  }
+  .h2 {
+    font-size: $h2-font-size-sm-down;
+    line-height: $display-line-height-sm-down;
+  }
+  .h3 {
+    font-size: $h3-font-size-sm-down;
+    line-height: $display-line-height-sm-down;
+  }
+  .h4 {
+    font-size: $h4-font-size-sm-down;
+    line-height: $display-line-height-sm-down;
+  }
+  .h5 {
+    font-size: $h5-font-size-sm-down;
+    line-height: $display-line-height-sm-down;
+  }
+  .h6 {
+    font-size: $h6-font-size-sm-down;
+    line-height: $display-line-height-sm-down;
+  }
+  
+}

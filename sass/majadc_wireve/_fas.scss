@@ -1,4 +1,4 @@
-.mdc-about .fas, .mdc-team .fab, .mdc-questions .fas {
+.mdc-about .fas, .mdc-team .fab, .mdc-questions .fas, .mdc-footer__social .fab {
   @include text-gradient-light();
 }
 .fa-check-square {
@@ -6,7 +6,7 @@
   margin-right: 0.5em;
 }
 
-.mdc-team .fab:hover{
+.mdc-team .fab:hover, .mdc-footer__social .fab:hover {
   color: $yellow;
   background-clip: text;
   -webkit-background-clip: text;
@@ -25,4 +25,10 @@
     
   }
   
+}
+
+.mdc-address .h1 .fas {
+  //font-weight: 300;
+  font-size: 1.5rem;
+  margin-right: 0.5em;
 }

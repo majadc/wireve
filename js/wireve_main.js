@@ -49,7 +49,15 @@ $(document).ready(function() {
     $(this).find('.mdc-awards__img img').css('animation-delay', `${delay}s`);
     delay++;
   });
-  
+
+  $(".mdc-awards__item").click(function(e){
+    e.stopPropagation();
+    $(this).find(".mdc-awards__icon").toggleClass('active');
+    $(this).find(".card-body").toggleClass('active');
+    $(this).find('.mdc-awards__entry').toggleClass('active');
+
+  });
+
   
 
   //comments accordion
