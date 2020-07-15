@@ -5,3 +5,4 @@ manual.txt
 js/vendor/isotope.pkgd.min.js
 gallery.html
 js/wireve_gallery.js
+node_modules/
