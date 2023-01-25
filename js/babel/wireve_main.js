@@ -53,7 +53,9 @@ $(document).ready(function () {
     $(this).find(".mdc-awards__icon").toggleClass('active');
     $(this).find(".card-body").toggleClass('active');
     $(this).find('.mdc-awards__entry').toggleClass('active');
-  }); //comments accordion
+  });
+
+  //comments accordion
 
   $('.accordionQuestions-panel').on('show.bs.collapse', function () {
     $(this).find('.mdc-questions__header').addClass('active');

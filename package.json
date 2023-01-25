@@ -17,12 +17,15 @@
   },
   "author": "majadc",
   "license": "ISC",
-  "dependencies": {
-    "@babel/polyfill": "^7.10.4"
-  },
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4"
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13"
   }
 }
