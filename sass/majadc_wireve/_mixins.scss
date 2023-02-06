@@ -8,6 +8,10 @@
 }
 }
 
+<<<<<<< HEAD
+=======
+/// 6. plain hover focus
+>>>>>>> structure/bootstrap
 @mixin hover-focus() {
 	&:hover, &:focus {
 		@content;

@@ -16,66 +16,66 @@
   background-position: center;
   box-shadow: none;
   &::before {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+	content: "";
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 
   }
   .card-body {
-    position: relative;
-    z-index: 3;
-    padding-top: 3rem;
+	position: relative;
+	z-index: 3;
+	padding-top: 3rem;
   }
 }
 @include media-breakpoint-down(sm) { 
   .mdc-header {
-    padding-top: 5rem;
-    border: 10px solid red;
+	padding-top: 5rem;
+	border: 10px solid red;
   }
 }
 @media (max-width: 767.98px) { 
   .mdc-header {
-    height: auto;
+	height: auto;
   }
  }
 
 // about
 .mdc-about {
   &__list-text {
-    margin-top: 0.25em;
+	margin-top: 0.25em;
   }
 }
 
 // stats
 .mdc-stats {
   li {
-    color: $orange;
-    font-size: 1.4rem;
+	color: $orange;
+	font-size: 1.4rem;
   }
   li .badge {
-    background: linear-gradient(to top right, color.change($yellow, $alpha: 0.95) 20%, color.change($brown, $alpha: 0.95) 70%);
+	background: linear-gradient(to top right, color.change($yellow, $alpha: 0.95) 20%, color.change($brown, $alpha: 0.95) 70%);
    // background-image: url("/images/tambourine_01.svg");
-    //background-position: center center;
+	//background-position: center center;
    // background-repeat: no-repeat;
-    //background-size: cover;
-    //width: 7rem;
-    //height: 7rem;
-    width: 100%;
-    padding-top:0.5em;
-    padding-bottom:0.5em;
-    display: block;
-    //line-height: 6.2rem;
-    text-align: center;
-    font-size: $font-size-base * 2;
+	//background-size: cover;
+	//width: 7rem;
+	//height: 7rem;
+	width: 100%;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	display: block;
+	//line-height: 6.2rem;
+	text-align: center;
+	font-size: $font-size-base * 2;
    font-weight: $font-weight-light;
-    margin-bottom: 1rem;
-    color: $black;
-    
+	margin-bottom: 1rem;
+	color: $black;
+	
   }
 }
 
@@ -90,177 +90,177 @@
   z-index: 20;
   //padding-bottom:4rem;
   .card {
-    background-color: transparent;
-    box-shadow: none;
-    
-    .card-body {
-      background: color.change($black, $alpha: 0.6);
-      width: 100%;
-    }
-    .card-title {
-      color: $blue;
-    }
-    .card-text {
-      color: $blue;
-      
-    }
+	background-color: transparent;
+	box-shadow: none;
+	
+	.card-body {
+	  background: color.change($black, $alpha: 0.6);
+	  width: 100%;
+	}
+	.card-title {
+	  color: $blue;
+	}
+	.card-text {
+	  color: $blue;
+	  
+	}
   }
 }
 
 // awards
 .mdc-awards {
   .test {
-    background-color: red;
+	background-color: red;
   }
   &__content {
-    margin-top: -3rem;
-    position: relative;
-    z-index: 20;
-    background-color: $black;
+	margin-top: -3rem;
+	position: relative;
+	z-index: 20;
+	background-color: $black;
   }
   .card {
-    position: relative;
-    padding: 5rem 0;
-    z-index: 21;
+	position: relative;
+	padding: 5rem 0;
+	z-index: 21;
   }
   &__img {
-    z-index: 4;
-    position: relative;
-    img {
-      animation: award-anime 7s cubic-bezier(.6,-0.28,.74,.05) infinite;
-      animation-direction: alternate;
-      position: relative;
-      
-    }
-    
+	z-index: 4;
+	position: relative;
+	img {
+	  animation: award-anime 7s cubic-bezier(.6,-0.28,.74,.05) infinite;
+	  animation-direction: alternate;
+	  position: relative;
+	  
+	}
+	
   }
   &__img-ico {
-    position: absolute;
-    top:1rem;
-    right: -2rem;
-    z-index: 5;
-    width: 2rem;
-    height: 2rem;
+	position: absolute;
+	top:1rem;
+	right: -2rem;
+	z-index: 5;
+	width: 2rem;
+	height: 2rem;
    
-    opacity:1 ;
-    @supports ( clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)) {
-      background-color: $blue;
-      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    }
-    animation: star-anime 7s cubic-bezier(.6,-0.28,.74,.05) infinite;
-    animation-direction: alternate;
+	opacity:1 ;
+	@supports ( clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)) {
+	  background-color: $blue;
+	  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	}
+	animation: star-anime 7s cubic-bezier(.6,-0.28,.74,.05) infinite;
+	animation-direction: alternate;
   }
   .card-body {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 6;
-    padding: 0;
-    width: 31px;
-    height: 31px;
-    background: $background-gradient-light;
-    border-top-right-radius: 0.25rem;
-    box-shadow:inset 0 0  3px $black;
-    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 6;
+	padding: 0;
+	width: 31px;
+	height: 31px;
+	background: $background-gradient-light;
+	border-top-right-radius: 0.25rem;
+	box-shadow:inset 0 0  3px $black;
+	transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 
   }
   &__icon {
-    display: block;
-    font-size: 2.5rem;
-    width: 44px;
-    height: 44px;
-    color: $black;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 20000;
-    //transform: rotatez(-40deg);
-    text-align: center;
-    line-height: 44px;
-    transition: all 0.1s cubic-bezier(0.77, 0, 0.175, 1);
-    opacity: 1;
-    background: $background-gradient-light;
-    border-top-right-radius: 0.25rem;
-    text-align: center;
-    
+	display: block;
+	font-size: 2.5rem;
+	width: 44px;
+	height: 44px;
+	color: $black;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 20000;
+	//transform: rotatez(-40deg);
+	text-align: center;
+	line-height: 44px;
+	transition: all 0.1s cubic-bezier(0.77, 0, 0.175, 1);
+	opacity: 1;
+	background: $background-gradient-light;
+	border-top-right-radius: 0.25rem;
+	text-align: center;
+	
   }
   
   &__entry {
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: translatez(100%);
-    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: translatez(100%);
+	transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+	
   }
   .card-body:hover {
-    // width: 100%;
-    // height: 100%;
-    // border-radius: 0;
+	// width: 100%;
+	// height: 100%;
+	// border-radius: 0;
   }
   .card-body.active {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
   }
   .card-body:hover .mdc-awards__icon {
-    // display: none;
-    // opacity: 0;
-    // visibility: hidden;
-    // transition-delay: 0s;
-    
+	// display: none;
+	// opacity: 0;
+	// visibility: hidden;
+	// transition-delay: 0s;
+	
   }
   .mdc-awards__icon.active {
-    // display: none;
-    // opacity: 0;
-    // visibility: hidden;
-    transition-delay: 0s;
-    background: $black;
-    color: $yellow;
+	// display: none;
+	// opacity: 0;
+	// visibility: hidden;
+	transition-delay: 0s;
+	background: $black;
+	color: $yellow;
   }
   .card-body:hover .mdc-awards__entry {
-    // width: 100%;
-    // height: 100%;
-    // opacity: 1;
-    // transform: translatez(0);
-    // transition-delay: 0.2s;
+	// width: 100%;
+	// height: 100%;
+	// opacity: 1;
+	// transform: translatez(0);
+	// transition-delay: 0.2s;
   }
   .mdc-awards__entry.active {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    transform: translatez(0);
-    transition-delay: 0.2s;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transform: translatez(0);
+	transition-delay: 0.2s;
   }
   .card-title {
-    color: $black;
+	color: $black;
   }
   .card-subtitle {
-    color: $black;
-    width: 100%;
-    text-align: center;
-    line-height: 1;
-    a {
-      display: block;
-      color: $black;
-      @include hover-focus() {
-        color: $yellow;
-        text-decoration: none;
-        background-color: color.change($black, $alpha: 0.7);
-      }
-    }
+	color: $black;
+	width: 100%;
+	text-align: center;
+	line-height: 1;
+	a {
+	  display: block;
+	  color: $black;
+	  @include hover-focus() {
+		color: $yellow;
+	    text-decoration: none;
+	    background-color: color.change($black, $alpha: 0.7);
+	  }
+	}
   }
   .card-text {
-    color: $black;
+	color: $black;
   }
 
 }
@@ -269,30 +269,30 @@
 .mdc-team {
 
   &__img {
-    position: relative;
-    img {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
+	position: relative;
+	img {
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
   }
 
   &__social {
-    position: absolute;
-    bottom: 0;
-    left:0;
-    width: 100%;
-    background-color: color.change($black, $alpha: 0.9);
-    font-size: 2rem;
-    opacity: 0;
-    transition: all 0.3s linear;
-    .nav-link {
-      line-height: 1;
-      font-size: 2.5rem;
-    }
+	position: absolute;
+	bottom: 0;
+	left:0;
+	width: 100%;
+	background-color: color.change($black, $alpha: 0.9);
+	font-size: 2rem;
+	opacity: 0;
+	transition: all 0.3s linear;
+	.nav-link {
+	  line-height: 1;
+	  font-size: 2.5rem;
+	}
   }
 
   &__img:hover .mdc-team__social {
-    opacity: 1;
+	opacity: 1;
   }
  
 }
@@ -303,34 +303,37 @@
    height: 100%;
   }
   .card-body {
-    display: grid;
-    grid-template-rows: fit-content(40%) auto 3rem;
+	display: grid;
+	grid-template-rows: fit-content(40%) auto 3rem;
   }
 }
 
 
 .mdc-questions {
   &__header {
-    cursor: pointer;
-    h3 {
-      font-family: $font-family-sans-serif;
-      font-weight: $font-weight-normal;
-      color: $yellow;
-      font-size: 1.4rem;
-      margin: 0;
-    }
+	cursor: pointer;
+	h3 {
+	  font-family: $font-family-sans-serif;
+	  font-weight: $font-weight-normal;
+	  color: $yellow;
+	  font-size: 1.4rem;
+	  margin: 0;
+	}
 
-    &:hover, &.active {
-      background: $background-gradient-light;
-      & h3 {
-        color: $black;
-      }
-    }
+	&:hover, &.active {
+	  background: $background-gradient-light;
+	  & h3 {
+		color: $black;
+	  }
+	}
   }
   &__body {
-    color: $black;
-    background-color: $yellow;
-    box-shadow: $box-shadow-brown;
+	color: $black;
+	background-color: $yellow;
+	box-shadow: $box-shadow-brown;
+  }
+  &__ico {
+	margin-right: 1.5rem;
   }
   
 
@@ -340,16 +343,21 @@
   font-size: 3rem;
   line-height: 1;
   .nav-link {
-    padding-top: 0;
+	padding-top: 0;
   }
 }
 .mdc-newsletter {
   input[type="text"] {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
   }
   button {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
   }
+}
+
+//lists
+.list-group-item  {
+	color: $yellow;
 }
