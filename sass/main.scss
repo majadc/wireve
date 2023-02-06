@@ -1,12 +1,6 @@
-@use 'sass:color';
-
-
-
+@use "sass:color";
 @import "bootstrap_overrides";
-
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-
 @import "majadc_wireve/variables";
 @import "majadc_wireve/mixins";
 @import "majadc_wireve/typography";

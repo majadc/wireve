@@ -1,67 +1,55 @@
 $blue: #c1ccd4;
 $orange: #fdb360;
-$yellow: #FFE8CF;
+$yellow: #ffe8cf;
 $yellow2: #fbe5ad;
 $brown: #8f7d75;
 $black: #000002;
 $white: #fefde5;
-
-
-$primary:       $brown;
-$secondary:     $yellow;
-$success:       $blue;
+$primary: $brown;
+$secondary: $yellow;
+$success: $blue;
 
 // $info:          $cyan !default;
 // $warning:       $yellow !default;
 // $danger:        $red !default;
-$light:         $yellow;
-$dark:          $black;
+$light: $yellow;
+$dark: $black;
+$font-family-sans-serif: "Advent Pro",  -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-size-base: 1.2rem;
+$font-weight-bolder: 600;
+$text-muted: color.change($brown, $alpha: 0.6);
 
-$font-family-sans-serif: 'Advent Pro',  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// body
 
-$font-size-base:              1.2rem;
-
-$font-weight-bolder:          600;
-
-
-$text-muted:                  color.change($brown, $alpha: 0.6);
-
-//body
-
-$body-bg:                   $black;
-$body-color:                $yellow;
-
-
-
+$body-bg: $black;
+$body-color: $yellow;
 
 // navbar
-$navbar-dark-color:                 rgba($yellow, .7) !default;
-$navbar-dark-hover-color:           rgba($orange, .75) !default;
-$navbar-dark-active-color:          $orange !default;
-$navbar-dark-disabled-color:        rgba($yellow, .25) !default;
+$navbar-dark-color: rgba($yellow, 0.7) !default;
+$navbar-dark-hover-color: rgba($orange, 0.75) !default;
+$navbar-dark-active-color: $orange !default;
+$navbar-dark-disabled-color: rgba($yellow, 0.25) !default;
 
-//card
-$card-bg:                           $black;
-$card-border-color:                 rgba($brown, .125);
-$card-cap-bg:                       rgba($black, .03) !default;
+// card
+$card-bg: $black;
+$card-border-color: rgba($brown, 0.125);
+$card-cap-bg: rgba($black, 0.03) !default;
 
-//list group
+// list group
 
-$list-group-color:                  null;
-$list-group-bg:                     $black;
-$list-group-border-color:           rgba($brown, .125);
+$list-group-color: null;
+$list-group-bg: $black;
+$list-group-border-color: rgba($brown, 0.125);
 
-//navs tab
-$nav-tabs-border-color:             $card-border-color;
-$nav-tabs-link-hover-border-color:  $card-border-color $card-border-color $nav-tabs-border-color !default;
-$nav-tabs-link-active-color:        $card-border-color;
+// navs tab
+$nav-tabs-border-color: $card-border-color;
+$nav-tabs-link-hover-border-color: $card-border-color $card-border-color $nav-tabs-border-color !default;
+$nav-tabs-link-active-color: $card-border-color;
 $nav-tabs-link-active-border-color: $card-border-color $card-border-color $black;
 
-// forms 
+// forms
 
-$input-color:                           $black;
-$input-border-color:                    $brown;
+$input-color: $black;
+$input-border-color: $brown;
 
 // lists
-
-
